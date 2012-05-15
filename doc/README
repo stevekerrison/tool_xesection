@@ -1,1 +1,10 @@
-Put documentation in this directory
+Usage: xesection xefile [n]
+
+Without n specified a list of discovered sections, their types and lengths
+will be printed.
+
+With n specified, the section block (including its header), at index n will
+be output to stdout.
+
+This can then be inserted into xefile. It's header and CRC are unchanged and
+so still valid.
