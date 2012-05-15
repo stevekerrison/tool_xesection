@@ -56,6 +56,7 @@ public:
   ~XE();
   const std::vector<const XESector *> &getSectors() { return sectors; }
   const XESector *getConfigSector() const;
+  bool dumpSector(std::ostream &o, int sector);
   bool operator!() const {
     return error;
   }

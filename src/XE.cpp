@@ -129,3 +129,23 @@ bool XE::ReadHeader() {
   s.seekg(off + length - 4);
   return false;
 }
+
+bool XE::dumpSector(std::ostream &o, int sector)
+{
+	int i = 0;
+	uint64_t length;
+	s.clear();
+	s.seekg(12,std::ios_base::beg);
+	length = ReadU64();
+	while(sector != i++)
+	{
+		s.seekg(length+4, std::ios_base::cur);
+		length = ReadU64();
+	}
+	s.seekg(-12, std::ios_base::cur);
+	length += 12;
+	char *buffer = new char[length];
+	s.read(buffer,length);
+	o.write(buffer,length);
+	return true;
+}
