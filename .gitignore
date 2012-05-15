@@ -1,5 +1,5 @@
 */.build_*/*
-*/bin/*
+bin/*
 *.o
 *.xe
 *.vcd
