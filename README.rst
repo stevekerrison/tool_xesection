@@ -3,7 +3,7 @@ XMOS XE section extractor
 
 :Stable release:  0.1.0
 
-:Status:  alpha
+:Status:  Release
 
 :Maintainer:  https://github.com/stevekerrison
 
@@ -21,7 +21,7 @@ To Do
 =====
 
 * Add more features if anyone every wants or needs them
-
+* Write a proper Makefile
 
 Known Issues
 ============
