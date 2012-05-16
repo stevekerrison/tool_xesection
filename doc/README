@@ -8,3 +8,7 @@ be output to stdout.
 
 This can then be inserted into xefile. It's header and CRC are unchanged and
 so still valid.
+
+Also included for your programming pleasure is xebuilder.py, which can
+turn the sections produced by xesection back into xe files that can be
+run in xrun.

@@ -16,6 +16,7 @@ Key Features
 * Reads XE file format
 * Prints section overviews
 * Can extract a specified section
+* Includes a python script xebuilder .py for assembling new XEs from dumped sections
 
 To Do
 =====
