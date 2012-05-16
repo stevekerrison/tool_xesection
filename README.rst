@@ -28,6 +28,7 @@ Known Issues
 ============
 
 * Doesn't check the integrity of sections
+* XEBuilder disables section CRCs
 
 Required Repositories
 ================
